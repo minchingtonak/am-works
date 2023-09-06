@@ -29,7 +29,19 @@ const Experience = () => {
             <h2 className="mt-6">Booz Allen Hamilton</h2>
             <span className="italic">January 2023 - Present</span>
             <p>
-              Due to the nature of my work, I can't immediately share
+              I'm currently a Software Engineer at{' '}
+              <a
+                href="https://boozallen.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="text-accent dark:text-[#e70e27] hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+              >
+                Booz Allen Hamilton
+                <span className="inline-flex align-middle">
+                  <Arrow />
+                </span>
+              </a>
+              . Due to the nature of my work, I can't immediately share
               information about this role. Please reach out if you would like
               some more info!
             </p>
@@ -63,7 +75,7 @@ const Experience = () => {
                 href="https://firstfloor.app/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-accent hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+                className="text-accent dark:text-[#e70e27] hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
               >
                 FirstFloor Studios
                 <span className="inline-flex align-middle">
@@ -112,7 +124,7 @@ const Experience = () => {
                 href="https://capitalone.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-accent hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+                className="text-accent dark:text-[#e70e27] hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
               >
                 Capital One
                 <span className="inline-flex align-middle">
@@ -204,7 +216,7 @@ const Experience = () => {
                 href="https://capitalone.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-accent hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+                className="text-accent dark:text-[#e70e27] hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
               >
                 Capital One
                 <span className="inline-flex align-middle">

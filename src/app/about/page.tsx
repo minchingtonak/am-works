@@ -32,7 +32,7 @@ const About = () => {
             href="https://fsu.edu/"
             target="_blank"
             rel="noreferrer noopener"
-            className="text-accent"
+            className="text-accent dark:text-[#e70e27]"
           >
             Florida State University
             <span className="inline-flex align-middle">
@@ -60,7 +60,7 @@ const About = () => {
                 href="https://www.goodreads.com/book/show/58784475-tomorrow-and-tomorrow-and-tomorrow"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-accent"
+                className="text-accent dark:text-[#e70e27]"
               >
                 Tomorrow, and Tomorrow, and Tomorrow by Gabrielle Zevin
                 <span className="inline-flex align-middle">
@@ -79,7 +79,7 @@ const About = () => {
                 href="https://twitter.com/ilyamiskov/status/1679535386987462656"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-accent"
+                className="text-accent dark:text-[#e70e27]"
               >
                 userbars
                 <span className="inline-flex align-middle">
@@ -96,7 +96,7 @@ const About = () => {
             href="https://letterboxd.com/andrewwhitely"
             target="_blank"
             rel="noreferrer noopener"
-            className="text-accent"
+            className="text-accent dark:text-[#e70e27]"
           >
             letterboxd
             <span className="inline-flex align-middle">
@@ -107,7 +107,7 @@ const About = () => {
             href="https://goodreads.com/andrewwhitely"
             target="_blank"
             rel="noreferrer noopener"
-            className="text-accent"
+            className="text-accent dark:text-[#e70e27]"
           >
             goodreads
             <span className="inline-flex align-middle">
@@ -118,7 +118,7 @@ const About = () => {
             href="https://www.threads.net/@ndrewwhitely"
             target="_blank"
             rel="noreferrer noopener"
-            className="text-accent"
+            className="text-accent dark:text-[#e70e27]"
           >
             threads
             <span className="inline-flex align-middle">
@@ -129,7 +129,7 @@ const About = () => {
             href="https://www.instagram.com/thrdsense"
             target="_blank"
             rel="noreferrer noopener"
-            className="text-accent"
+            className="text-accent dark:text-[#e70e27]"
           >
             instagram
             <span className="inline-flex align-middle">

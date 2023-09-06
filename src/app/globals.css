@@ -1,4 +1,10 @@
 @tailwind base;
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  display: none;
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -140,13 +146,13 @@ table {
   @apply mt-0 rounded-t-none border-t-0;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 /* body {
   color: rgb(var(--foreground-rgb));
