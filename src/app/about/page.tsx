@@ -13,11 +13,9 @@ const About = () => {
       <h1 className="font-bold text-4xl mb-8 tracking-tighter">
         a bit about me
       </h1>
-      <Image
-        className="float-left h-52 w-52"
-        src="/avatar.png"
-        alt="memoji avatar"
-      />
+      <div className="w-52 h-52 relative float-left">
+        <Image src="/avatar.png" layout="fill" alt="memoji avatar" />
+      </div>
       <section className="prose prose-neutral dark:prose-invert">
         <p>
           I'm what I like to call a chronic new hobbyist. It may seem like I'm
