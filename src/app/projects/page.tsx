@@ -21,7 +21,7 @@ const Projects = () => {
             href="https://read.cv/andrewwhitely"
             target="_blank"
             rel="noreferrer noopener"
-            className="text-accent hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+            className="text-accent dark:text-[#e70e27] hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
           >
             read.cv
             <span className="inline-flex align-middle">
@@ -32,7 +32,7 @@ const Projects = () => {
             href="https://linkedin.com/in/andrewwhitely"
             target="_blank"
             rel="noreferrer noopener"
-            className="text-accent hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+            className="text-accent dark:text-[#e70e27] hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
           >
             linkedin
             <span className="inline-flex align-middle">
@@ -43,7 +43,7 @@ const Projects = () => {
             href="https://github.com/andrewwhitely"
             target="_blank"
             rel="noreferrer noopener"
-            className="text-accent hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+            className="text-accent dark:text-[#e70e27] hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
           >
             github
             <span className="inline-flex align-middle">
