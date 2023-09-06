@@ -8,7 +8,9 @@ export const metadata: Metadata = {
 const Experience = () => {
   return (
     <div>
-      <h1 className="font-bold text-4xl mb-8 tracking-tighter">work</h1>
+      <h1 className="font-bold text-4xl mb-8 tracking-tighter">
+        where i've been
+      </h1>
       <section className="prose prose-neutral dark:prose-invert">
         <p>
           Here's a summary of my career so far. If you want to know more about
