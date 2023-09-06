@@ -8,7 +8,9 @@ export const metadata: Metadata = {
 const Projects = () => {
   return (
     <div>
-      <h1 className="font-bold text-4xl mb-8 tracking-tighter">projects</h1>
+      <h1 className="font-bold text-4xl mb-8 tracking-tighter">
+        things i've done
+      </h1>
       <section className="prose prose-neutral dark:prose-invert">
         <p>
           Eventually, this page will become a running log of past, present, and
