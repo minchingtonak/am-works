@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Arrow from '../components/arrow';
 import Tooltip from '../components/tooltip';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -12,7 +13,11 @@ const About = () => {
       <h1 className="font-bold text-4xl mb-8 tracking-tighter">
         a bit about me
       </h1>
-      <img className="float-left h-52 w-52" src="/avatar.png" />
+      <Image
+        className="float-left h-52 w-52"
+        src="/avatar.png"
+        alt="memoji avatar"
+      />
       <section className="prose prose-neutral dark:prose-invert">
         <p>
           I'm what I like to call a chronic new hobbyist. It may seem like I'm
