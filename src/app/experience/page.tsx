@@ -15,7 +15,7 @@ const Experience = () => {
           any role, project, or tech stack, please reach out:{' '}
           <a
             href="mailto:andrewnwhitely@gmail.com?subject=Let%27s talk%21"
-            className="text-accent hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+            className="text-accent dark:text-[#e70e27] hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
           >
             here
             <span className="inline-flex align-middle">
