@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     default: 'Andrew Whitely',
     template: '%s | Andrew Whitely',
   },
-  description: 'software engineer, photographer, designer',
+  description: 'product-focused, design-minded software engineer',
   openGraph: {
     title: 'Andrew Whitely',
-    description: 'software engineer, photographer, designer',
+    description: 'product-focused, design-minded software engineer',
     url: 'https://aw.works',
     siteName: 'Andrew Whitely',
     locale: 'en-US',
