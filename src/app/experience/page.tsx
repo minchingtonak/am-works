@@ -17,7 +17,7 @@ const Experience = () => {
           any role, project, or tech stack, please reach out:{' '}
           <a
             href="mailto:andrewnwhitely@gmail.com?subject=Let%27s talk%21"
-            className="text-accent dark:text-[#e70e27] hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+            className="text-accent dark:text-shade hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
           >
             here
             <span className="inline-flex align-middle">
@@ -36,7 +36,7 @@ const Experience = () => {
                 href="https://boozallen.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-accent dark:text-[#e70e27] hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+                className="text-accent dark:text-shade hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
               >
                 Booz Allen Hamilton
                 <span className="inline-flex align-middle">
@@ -77,7 +77,7 @@ const Experience = () => {
                 href="https://firstfloor.app/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-accent dark:text-[#e70e27] hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+                className="text-accent dark:text-shade hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
               >
                 FirstFloor Studios
                 <span className="inline-flex align-middle">
@@ -100,6 +100,9 @@ const Experience = () => {
                 </div>
                 <div className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 w-fit">
                   TailwindCSS
+                </div>
+                <div className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 w-fit">
+                  Google Cloud
                 </div>
                 <div className="flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-medium leading-5 w-fit">
                   SwiftUI
@@ -126,7 +129,7 @@ const Experience = () => {
                 href="https://capitalone.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-accent dark:text-[#e70e27] hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+                className="text-accent dark:text-shade hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
               >
                 Capital One
                 <span className="inline-flex align-middle">
@@ -218,7 +221,7 @@ const Experience = () => {
                 href="https://capitalone.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-accent dark:text-[#e70e27] hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+                className="text-accent dark:text-shade hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
               >
                 Capital One
                 <span className="inline-flex align-middle">

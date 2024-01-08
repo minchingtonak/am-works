@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 import typography from '@tailwindcss/typography';
 
 const config: Config = {
@@ -26,13 +26,14 @@ const config: Config = {
         },
       },
       colors: {
-        accent: '#b00b1e'
-      }
+        accent: '#ea9f42',
+        shade: '#d98318',
+      },
     },
   },
   future: {
     hoverOnlyWhenSupported: true,
   },
   plugins: [typography],
-}
-export default config
+};
+export default config;

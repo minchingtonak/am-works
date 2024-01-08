@@ -62,7 +62,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        'text-black bg-white dark:text-white dark:bg-[#111010]',
+        'text-black bg-white dark:text-[#e7ecf1] dark:bg-[#14181d]',
         graphik.variable
       )}
     >
