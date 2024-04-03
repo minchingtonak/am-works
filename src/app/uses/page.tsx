@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Tech',
-  description: 'various running lists',
+  title: "Uses",
+  description: "various running lists",
 };
 
-const Tech = () => {
+const Uses = () => {
   return (
     <div>
       <h1 className="font-bold text-4xl mb-8 tracking-tighter">setups</h1>
@@ -17,7 +17,11 @@ const Tech = () => {
         </ul>
         <h3 id="personal">Personal</h3>
         <ul>
-          <li>13" MacBook Pro (2019)</li>
+          <li>14" MacBook Pro (2023)</li>
+          <ul>
+            <li>8GB Memory</li>
+            <li>1TB storage</li>
+          </ul>
           <li>PC Build</li>
           <ul>
             <li>AMD Ryzen 5 5600X</li>
@@ -44,7 +48,9 @@ const Tech = () => {
           <ul>
             <li>TTArtisan 27mm ƒ/2.8</li>
           </ul>
-          <li>Olympus Stylus Infinity</li>
+          <li>
+            <s>Olympus Stylus Infinity</s> 🪦
+          </li>
           <li>Yashica T4</li>
           <li>Kodak Ektar H35</li>
           <li>Ansco Pix Panorama</li>
@@ -55,4 +61,4 @@ const Tech = () => {
     </div>
   );
 };
-export default Tech;
+export default Uses;

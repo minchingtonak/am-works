@@ -6,8 +6,8 @@ const Page = () => {
       </h1>
       <section className="prose prose-neutral dark:prose-invert text-xl strong">
         <p>
-          I'm a product-focused software engineer. I love creating enjoyable and
-          modern user experiences across the web.
+          I'm a product-focused software engineer. I love creating products and
+          experiences for the digital and physical world.
         </p>
       </section>
     </div>

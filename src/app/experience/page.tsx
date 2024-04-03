@@ -1,9 +1,9 @@
-import type { Metadata } from 'next';
-import Arrow from '../components/arrow';
+import type { Metadata } from "next";
+import Arrow from "../components/arrow";
 
 export const metadata: Metadata = {
-  title: 'Experience',
-  description: 'experience',
+  title: "Experience",
+  description: "experience",
 };
 const Experience = () => {
   return (
@@ -14,7 +14,7 @@ const Experience = () => {
       <section className="prose prose-neutral dark:prose-invert">
         <p>
           Here's a summary of my career so far. If you want to know more about
-          any role, project, or tech stack, please reach out:{' '}
+          any role, project, or tech stack, please reach out:{" "}
           <a
             href="mailto:andrewnwhitely@gmail.com?subject=Let%27s talk%21"
             className="text-accent dark:text-shade hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
@@ -31,7 +31,7 @@ const Experience = () => {
             <h2 className="mt-6">Booz Allen Hamilton</h2>
             <span className="italic">January 2023 - Present</span>
             <p>
-              I'm currently a Software Engineer at{' '}
+              I'm currently a Software Engineer at{" "}
               <a
                 href="https://boozallen.com/"
                 target="_blank"
@@ -40,6 +40,7 @@ const Experience = () => {
               >
                 Booz Allen Hamilton
                 <span className="inline-flex align-middle">
+                  {" "}
                   <Arrow />
                 </span>
               </a>
@@ -72,7 +73,7 @@ const Experience = () => {
             <h2 className="mt-6">FirstFloor Studios</h2>
             <span className="italic">February 2022 - October 2022</span>
             <p>
-              During this time I was a Software Engineer at{' '}
+              During this time I was a Software Engineer at{" "}
               <a
                 href="https://firstfloor.app/"
                 target="_blank"
@@ -81,6 +82,7 @@ const Experience = () => {
               >
                 FirstFloor Studios
                 <span className="inline-flex align-middle">
+                  {" "}
                   <Arrow />
                 </span>
               </a>
@@ -124,7 +126,7 @@ const Experience = () => {
             <span className="italic">February 2019 - February 2022</span>
             <p>
               Following my time in the CODA program, I joined the "standard"
-              (computer-science grad) new grad program at{' '}
+              (computer-science grad) new grad program at{" "}
               <a
                 href="https://capitalone.com/"
                 target="_blank"
@@ -133,9 +135,10 @@ const Experience = () => {
               >
                 Capital One
                 <span className="inline-flex align-middle">
+                  {" "}
                   <Arrow />
                 </span>
-              </a>{' '}
+              </a>{" "}
               called the Technology Development Program (TDP) . This was a
               two-year rotational program that exposed us to different teams
               within the company, allowing us to learn new skills both personal
@@ -216,7 +219,7 @@ const Experience = () => {
             </h2>
             <span className="italic">July 2018 - January 2019</span>
             <p>
-              In my first role out of college, I joined{' '}
+              In my first role out of college, I joined{" "}
               <a
                 href="https://capitalone.com/"
                 target="_blank"
@@ -225,9 +228,10 @@ const Experience = () => {
               >
                 Capital One
                 <span className="inline-flex align-middle">
+                  {" "}
                   <Arrow />
                 </span>
-              </a>{' '}
+              </a>{" "}
               as a part of their (at the time, new-ish) early career program
               called the Capital One Developer Academy. This program was aimed
               at bringing both underrepresented and non-computer science

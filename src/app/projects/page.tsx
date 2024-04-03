@@ -1,9 +1,9 @@
-import type { Metadata } from 'next';
-import Arrow from '../components/arrow';
+import type { Metadata } from "next";
+import Arrow from "../components/arrow";
 
 export const metadata: Metadata = {
-  title: 'Projects',
-  description: 'projects',
+  title: "Projects",
+  description: "projects",
 };
 const Projects = () => {
   return (
@@ -70,6 +70,7 @@ const Projects = () => {
               >
                 read more
                 <span className="inline-flex align-middle">
+                  {" "}
                   <Arrow />
                 </span>
               </a>
