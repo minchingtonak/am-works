@@ -3,7 +3,6 @@ import { ThemeSwitch } from './theme-switch';
 
 const navItems = {
   '/': { name: 'home' },
-  '/about': { name: 'about' },
   '/work': { name: 'work' },
   '#': { name: ' | ' },
 };

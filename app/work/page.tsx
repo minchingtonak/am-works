@@ -13,6 +13,26 @@ export default function Work() {
 
   return (
     <section>
+      <div className='text-xl font-normal'>
+        Currently at{' '}
+        <a href='https://boozallen.com/' target='_blank' className='underline'>
+          Booz Allen Hamilton
+        </a>
+        , previously at{' '}
+        <a
+          href='https://twitter.com/firstfloorapp'
+          target='_blank'
+          className='underline'
+        >
+          FirstFloor Studios
+        </a>
+        , and before then at{' '}
+        <a href='https://capitalone.com/' target='_blank' className='underline'>
+          Capital One
+        </a>
+        .
+      </div>
+      <hr className='my-4 opacity-25' />
       <h1 className='mb-8 text-2xl font-medium tracking-tight'>
         Work Experience
       </h1>

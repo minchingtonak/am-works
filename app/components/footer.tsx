@@ -43,14 +43,6 @@ export default function Footer() {
       >
         {metaData.title}
       </a>
-      <style jsx>{`
-        @media screen and (max-width: 480px) {
-          article {
-            padding-top: 2rem;
-            padding-bottom: 4rem;
-          }
-        }
-      `}</style>
       <SocialLinks />
     </small>
   );
