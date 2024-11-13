@@ -13,6 +13,10 @@ export default function Page() {
           things that they use daily. I'm passionate about technology,
           photography, movies, and a slew of other interests and hobbies.
         </p>
+        <p>
+          Currently open to freelance and full-time opportunities. Let's{' '}
+          <a href='mailto:andrewnwhitely@gmail.com?Subject=Hey!'>talk</a>!
+        </p>
       </div>
     </section>
   );

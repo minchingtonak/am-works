@@ -4,7 +4,6 @@ import { ThemeSwitch } from './theme-switch';
 const navItems = {
   '/': { name: 'home' },
   '/work': { name: 'work' },
-  '#': { name: ' | ' },
 };
 
 export function Navbar() {
@@ -26,6 +25,9 @@ export function Navbar() {
               {name}
             </Link>
           ))}
+          <Link href='https://www.byandrew.xyz' target='_blank'>
+            photography
+          </Link>
           <ThemeSwitch />
         </div>
       </div>
