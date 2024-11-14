@@ -13,39 +13,47 @@ export default function Work() {
 
   return (
     <section>
-      <div className='text-xl font-normal'>
+      <div className='text-xl font-bold'>
         Currently at{' '}
-        <a
-          href='https://boozallen.com/'
-          target='_blank'
-          className='underline hover:bg-[#007481] hover:text-white'
-        >
-          Booz Allen Hamilton
-        </a>
+        <mark className='text-[#B95B54] bg-transparent'>
+          <a
+            href='https://boozallen.com/'
+            target='_blank'
+            className='underline hover:bg-[#007481] hover:text-white'
+          >
+            Booz Allen Hamilton
+          </a>
+        </mark>
         , previously at{' '}
-        <a
-          href='https://twitter.com/firstfloorapp'
-          target='_blank'
-          className='underline hover:bg-[#2356f6] hover:text-white'
-        >
-          FirstFloor Studios
-        </a>
+        <mark className='text-[#B95B54] bg-transparent'>
+          <a
+            href='https://twitter.com/firstfloorapp'
+            target='_blank'
+            className='underline hover:bg-[#2356f6] hover:text-white'
+          >
+            FirstFloor Studios
+          </a>
+        </mark>
         , and before then at{' '}
-        <a
-          href='https://capitalone.com/'
-          target='_blank'
-          className='underline hover:bg-[#355f7f] hover:text-white'
-        >
-          Capital One
-        </a>
+        <mark className='text-[#B95B54] bg-transparent'>
+          <a
+            href='https://capitalone.com/'
+            target='_blank'
+            className='underline hover:bg-[#355f7f] hover:text-white'
+          >
+            Capital One
+          </a>
+        </mark>
         . Building something at{' '}
-        <a
-          href='https://lunchbox.studio/'
-          target='_blank'
-          className='cursor-not-allowed underline'
-        >
-          Lunchbox Studio
-        </a>
+        <mark className='text-[#B95B54] bg-transparent'>
+          <a
+            href='https://lunchbox.studio/'
+            target='_blank'
+            className='cursor-not-allowed underline'
+          >
+            Lunchbox Studio
+          </a>
+        </mark>
         .
       </div>
       <hr className='flex m-auto my-4 opacity-75 dark:opacity-25 w-full' />
@@ -54,9 +62,9 @@ export default function Work() {
       </h1>
       <div className='space-y-6'>
         {workExperience.map((job, index) => (
-          <div className='flex flex-col'>
+          <div key={index} className='flex flex-col'>
             <div className='w-full flex justify-between items-baseline'>
-              <span className='text-black dark:text-white font-medium tracking-tight block group hover:opacity-80 transition-opacity duration-200'>
+              <span className='text-black dark:text-white font-medium tracking-tight block group transition-opacity duration-200'>
                 <a
                   key={index}
                   href={job.url}

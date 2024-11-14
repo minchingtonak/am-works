@@ -7,6 +7,11 @@
   color: #fefefe;
 }
 
+.dark ::selection {
+  background-color: #fefefe;
+  color: #060402;
+}
+
 /* Light theme colors */
 :root {
   --sh-class: #2d5e9d;
@@ -152,7 +157,7 @@ table {
 
 @media (prefers-color-scheme: dark) {
   ::selection {
-    background-color: #fefefe;
-    color: #060402;
+    background-color: #060402;
+    color: #fefefe;
   }
 }

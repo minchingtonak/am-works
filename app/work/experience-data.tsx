@@ -59,6 +59,6 @@ export const Projects: Role[] = [
     description:
       'Building a freelance networking platform to open pathways to jobs in entertainment industries by connecting freelancers directly to employers.',
     url: 'https://surelywork.com/',
-    styles: 'hover:bg-[#A3FD3D]',
+    styles: 'hover:bg-[#A3FD3D] dark:hover:text-[#060402]',
   },
 ];
