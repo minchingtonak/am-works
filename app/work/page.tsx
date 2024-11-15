@@ -1,9 +1,8 @@
-import type { Metadata } from 'next';
+'use client';
+
+import { useEffect, useState } from 'react';
+
 import { Jobs, Projects } from './experience-data';
-export const metadata: Metadata = {
-  title: `Work`,
-  description: 'A short history of my work experience and projects.',
-};
 
 const generateRandomColor = () => {
   const color =
@@ -15,11 +14,17 @@ const generateRandomColor = () => {
 };
 
 export default function Work() {
+  const initialColor = generateRandomColor();
+
+  const [color, setColor] = useState(initialColor);
+
+  useEffect(() => {
+    setColor(color);
+  }, []);
+
   const workExperience = [...Jobs, ...Projects].sort(
     (b, a) => a.start - b.start
   );
-
-  const color = generateRandomColor();
 
   return (
     <section>

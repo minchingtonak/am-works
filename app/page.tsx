@@ -1,3 +1,7 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+
 const generateRandomColor = () => {
   const color =
     '#' +
@@ -8,7 +12,13 @@ const generateRandomColor = () => {
 };
 
 export default function Page() {
-  const color = generateRandomColor();
+  const initialColor = generateRandomColor();
+
+  const [color, setColor] = useState(initialColor);
+
+  useEffect(() => {
+    setColor(color);
+  }, []);
 
   return (
     <section>
