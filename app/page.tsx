@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <section>
       <div className='prose prose-neutral dark:prose-invert'>
-        <p className='text-2xl font-bold tracking-tight'>
+        <p className='text-2xl font-bold tracking-tight fade-in-bottom'>
           Hey, I'm{' '}
           <mark
             style={{
@@ -40,7 +40,7 @@ export default function Page() {
           </mark>{' '}
           based in Charlotte, North Carolina.
         </p>
-        <p>
+        <p className='fade-in-bottom delay-500'>
           I’m passionate about building solutions that improve how people
           interact with the technology that they use daily. I’ve had the
           privilege to work in various industries and build a variety of
@@ -49,7 +49,7 @@ export default function Page() {
           to the products I build. Outside of work, I enjoy photography, movies,
           cycling, and a slew of other interests and hobbies.
         </p>
-        <p>
+        <p className='fade-in-bottom delay-500'>
           Currently open to freelance and full-time opportunities. Let's{' '}
           <a href='mailto:andrewnwhitely@gmail.com?Subject=Hey!'>talk</a>!
         </p>
