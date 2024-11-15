@@ -1,9 +1,17 @@
-import { generateRandomColor } from 'app/page';
 import type { Metadata } from 'next';
 import { Jobs, Projects } from './experience-data';
 export const metadata: Metadata = {
   title: `Work`,
   description: 'A short history of my work experience and projects.',
+};
+
+const generateRandomColor = () => {
+  const color =
+    '#' +
+    Math.floor(Math.random() * 16777215)
+      .toString(16)
+      .padStart(6, '0');
+  return color;
 };
 
 export default function Work() {
