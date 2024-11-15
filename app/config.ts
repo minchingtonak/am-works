@@ -1,5 +1,5 @@
 export const metaData = {
-  baseUrl: 'https://nextfolio-template.vercel.app/',
+  baseUrl: 'https://www.aw.works/',
   title: 'Andrew Whitely - Software Engineer',
   name: 'Andrew Whitely',
   ogImage: '/og.png',
