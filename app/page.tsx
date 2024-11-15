@@ -1,15 +1,32 @@
 export default function Page() {
+  const color = generateRandomColor();
+
   return (
     <section>
       <div className='prose prose-neutral dark:prose-invert'>
         <p className='text-2xl font-bold tracking-tight'>
-          Hey, I'm <mark className='text-[#B95B54] bg-transparent'>Andrew</mark>{' '}
+          Hey, I'm{' '}
+          <mark
+            style={{
+              color,
+            }}
+          >
+            Andrew
+          </mark>{' '}
           &mdash; a{' '}
-          <mark className='text-[#B95B54] bg-transparent'>
+          <mark
+            style={{
+              color,
+            }}
+          >
             product-focused, fullstack software engineer
           </mark>{' '}
           and{' '}
-          <mark className='text-[#B95B54] bg-transparent'>
+          <mark
+            style={{
+              color,
+            }}
+          >
             chronic hobbyist
           </mark>{' '}
           based in Charlotte, North Carolina.
@@ -31,3 +48,12 @@ export default function Page() {
     </section>
   );
 }
+
+export const generateRandomColor = () => {
+  const color =
+    '#' +
+    Math.floor(Math.random() * 16777215)
+      .toString(16)
+      .padStart(6, '0');
+  return color;
+};

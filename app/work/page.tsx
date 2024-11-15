@@ -1,9 +1,9 @@
+import { generateRandomColor } from 'app/page';
 import type { Metadata } from 'next';
 import { Jobs, Projects } from './experience-data';
-
 export const metadata: Metadata = {
   title: `Work`,
-  description: '',
+  description: 'A short history of my work experience and projects.',
 };
 
 export default function Work() {
@@ -11,11 +11,17 @@ export default function Work() {
     (b, a) => a.start - b.start
   );
 
+  const color = generateRandomColor();
+
   return (
     <section>
       <div className='text-xl font-bold'>
         Currently at{' '}
-        <mark className='text-[#B95B54] bg-transparent'>
+        <mark
+          style={{
+            color,
+          }}
+        >
           <a
             href='https://boozallen.com/'
             target='_blank'
@@ -25,7 +31,11 @@ export default function Work() {
           </a>
         </mark>
         , previously at{' '}
-        <mark className='text-[#B95B54] bg-transparent'>
+        <mark
+          style={{
+            color,
+          }}
+        >
           <a
             href='https://twitter.com/firstfloorapp'
             target='_blank'
@@ -35,7 +45,11 @@ export default function Work() {
           </a>
         </mark>
         , and before then at{' '}
-        <mark className='text-[#B95B54] bg-transparent'>
+        <mark
+          style={{
+            color,
+          }}
+        >
           <a
             href='https://capitalone.com/'
             target='_blank'
@@ -45,7 +59,11 @@ export default function Work() {
           </a>
         </mark>
         . Building something at{' '}
-        <mark className='text-[#B95B54] bg-transparent'>
+        <mark
+          style={{
+            color,
+          }}
+        >
           <a
             href='https://lunchbox.studio/'
             target='_blank'

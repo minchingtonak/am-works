@@ -161,3 +161,7 @@ table {
     color: #fefefe;
   }
 }
+
+mark {
+  background-color: transparent;
+}
