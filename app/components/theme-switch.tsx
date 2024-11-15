@@ -3,6 +3,7 @@ import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes';
 import type { ThemeProviderProps } from 'next-themes/dist/types';
 import * as React from 'react';
 
+import { FiMoon, FiSun } from 'react-icons/fi';
 const storageKey = 'theme-preference';
 
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
@@ -68,14 +69,6 @@ export const ThemeSwitch: React.FC = () => {
     reflectPreference(newTheme);
   };
 
-  if (!mounted) {
-    return (
-      <p className='text-[#1c1c1c]' aria-hidden='true'>
-        light
-      </p>
-    );
-  }
-
   return (
     <button
       id='theme-toggle'
@@ -84,9 +77,13 @@ export const ThemeSwitch: React.FC = () => {
       className='flex items-center justify-center transition-opacity duration-300 hover:opacity-90'
     >
       {currentTheme === 'dark' ? (
-        <p className='text-[#D4D4D4] text-xs'>go light</p>
+        <p>
+          <FiSun className='text-[#D4D4D4] text-xs' />
+        </p>
       ) : (
-        <p className='text-[#1c1c1c] text-xs'>go dark</p>
+        <p>
+          <FiMoon className='text-[#1c1c1c] text-xs' />
+        </p>
       )}
     </button>
   );
