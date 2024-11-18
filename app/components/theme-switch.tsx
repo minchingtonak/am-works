@@ -74,7 +74,7 @@ export const ThemeSwitch: React.FC = () => {
       id='theme-toggle'
       aria-label={`${currentTheme} mode`}
       onClick={toggleTheme}
-      className='flex items-center justify-center transition-opacity duration-300 hover:opacity-90'
+      className='flex items-center align-middle justify-center transition-opacity duration-300 hover:opacity-90'
     >
       {currentTheme === 'dark' ? (
         <p>

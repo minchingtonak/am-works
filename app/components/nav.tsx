@@ -26,8 +26,12 @@ export function Navbar() {
               {name}
             </Link>
           ))}
-          <Link href='https://www.byandrew.xyz' target='_blank'>
-            photography
+          <Link
+            href='https://www.byandrew.xyz'
+            target='_blank'
+            className='align-middle'
+          >
+            photography →
           </Link>
           <ThemeSwitch />
         </div>
