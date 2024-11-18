@@ -1,25 +1,4 @@
-'use client';
-
-import { useEffect, useState } from 'react';
-
-const generateRandomColor = () => {
-  const color =
-    '#' +
-    Math.floor(Math.random() * 16777215)
-      .toString(16)
-      .padStart(6, '0');
-  return color;
-};
-
 export default function Page() {
-  const initialColor = generateRandomColor();
-
-  const [color, setColor] = useState(initialColor);
-
-  useEffect(() => {
-    setColor(color);
-  }, []);
-
   return (
     <section>
       <div className='prose prose-neutral dark:prose-invert'>
@@ -27,7 +6,7 @@ export default function Page() {
           Hey, I'm{' '}
           <mark
             style={{
-              color,
+              color: '#0e82e0',
             }}
           >
             Andrew
@@ -35,7 +14,7 @@ export default function Page() {
           &mdash; a{' '}
           <mark
             style={{
-              color,
+              color: '#0e82e0',
             }}
           >
             product-focused, fullstack software engineer
@@ -43,7 +22,7 @@ export default function Page() {
           and{' '}
           <mark
             style={{
-              color,
+              color: '#0e82e0',
             }}
           >
             chronic hobbyist

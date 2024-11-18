@@ -1,30 +1,11 @@
-'use client';
-
-import { useEffect, useState } from 'react';
-
 import { Jobs, Projects } from './experience-data';
 
-const generateRandomColor = () => {
-  const color =
-    '#' +
-    Math.floor(Math.random() * 16777215)
-      .toString(16)
-      .padStart(6, '0');
-  return color;
-};
-
-export default function Work() {
-  const initialColor = generateRandomColor();
-
-  const [color, setColor] = useState(initialColor);
-
-  useEffect(() => {
-    setColor(color);
-  }, []);
-
+export default function Work({ color }: { color: string }) {
   const workExperience = [...Jobs, ...Projects].sort(
     (b, a) => a.start - b.start
   );
+
+  console.log('color', color);
 
   return (
     <section>
@@ -32,7 +13,7 @@ export default function Work() {
         Currently at{' '}
         <mark
           style={{
-            color,
+            color: '#0e82e0',
           }}
         >
           <a
@@ -46,7 +27,7 @@ export default function Work() {
         , previously at{' '}
         <mark
           style={{
-            color,
+            color: '#0e82e0',
           }}
         >
           <a
@@ -60,7 +41,7 @@ export default function Work() {
         , and before then at{' '}
         <mark
           style={{
-            color,
+            color: '#0e82e0',
           }}
         >
           <a
@@ -74,7 +55,7 @@ export default function Work() {
         . Building something at{' '}
         <mark
           style={{
-            color,
+            color: '#0e82e0',
           }}
         >
           <a
