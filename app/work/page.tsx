@@ -1,11 +1,9 @@
 import { Jobs, Projects } from './experience-data';
 
-export default function Work({ color }: { color: string }) {
+export default function Work() {
   const workExperience = [...Jobs, ...Projects].sort(
     (b, a) => a.start - b.start
   );
-
-  console.log('color', color);
 
   return (
     <section>
