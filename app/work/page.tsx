@@ -59,7 +59,7 @@ export default function Work() {
           <a
             href='https://lunchbox.studio/'
             target='_blank'
-            className='cursor-not-allowed underline'
+            className='hover:bg-[#007d46] hover:text-white underline'
           >
             Lunchbox Studio
           </a>

@@ -15,8 +15,9 @@ export const Jobs: Role[] = [
     description: 'Coming Soon',
     url: 'https://lunchbox.studio',
     start: 2025,
-    locked: true,
+    locked: false,
     current: false,
+    styles: 'hover:bg-[#007d46] hover:text-white',
   },
   {
     title: 'Booz Allen Hamilton',
