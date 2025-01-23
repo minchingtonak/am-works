@@ -87,6 +87,10 @@ export const Products: Product[] = [
     category: 'software',
   },
   {
+    name: 'discord',
+    category: 'software',
+  },
+  {
     name: 'Steam',
     category: 'gaming',
   },
