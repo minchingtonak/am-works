@@ -11,15 +11,6 @@ export interface Role {
 
 export const Jobs: Role[] = [
   {
-    title: 'Lunchbox Studio',
-    description: 'Coming Soon',
-    url: 'https://lunchbox.studio',
-    start: 2025,
-    locked: false,
-    current: false,
-    styles: 'hover:bg-[#007d46] hover:text-white',
-  },
-  {
     title: 'Booz Allen Hamilton',
     start: 2023,
     description: 'Developing full-stack web applications for various clients.',
@@ -33,7 +24,7 @@ export const Jobs: Role[] = [
     start: 2022,
     end: 2022,
     description:
-      'Developed a mobile-first web3 marketplace and on-the-go smart contract creation platform.',
+      'Delivered a mobile-first web3 marketplace and on-the-go smart contract creation platform.',
     url: 'https://firstfloor.app/',
     locked: false,
     current: false,
@@ -44,7 +35,7 @@ export const Jobs: Role[] = [
     start: 2018,
     end: 2022,
     description:
-      'Worked on internal facing and consumer applications, helping to change banking for good.',
+      'Shipped internal and consumer applications, helping to change banking for good.',
     url: 'https://capitalone.com/',
     locked: false,
     current: false,
@@ -53,8 +44,18 @@ export const Jobs: Role[] = [
 ];
 export const Projects: Role[] = [
   {
+    title: 'Lunchbox Studio',
+    description: 'Coming Soon',
+    url: 'https://lunchbox.studio',
+    start: 2025,
+    locked: false,
+    current: false,
+    styles: 'hover:bg-[#007d46] hover:text-white',
+  },
+  {
     title: 'Surely + Work',
     start: 2024,
+    end: 2025,
     locked: false,
     current: true,
     description:

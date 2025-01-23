@@ -6,7 +6,7 @@ export default function Page() {
           Hey, I'm{' '}
           <mark
             style={{
-              color: '#0e82e0',
+              color: '#ff8c19',
             }}
           >
             Andrew
@@ -14,15 +14,15 @@ export default function Page() {
           &mdash; a{' '}
           <mark
             style={{
-              color: '#0e82e0',
+              color: '#ff8c19',
             }}
           >
-            product-focused, fullstack software engineer
+            product-minded software engineer
           </mark>{' '}
           and{' '}
           <mark
             style={{
-              color: '#0e82e0',
+              color: '#ff8c19',
             }}
           >
             chronic hobbyist
@@ -35,8 +35,8 @@ export default function Page() {
           privilege to work in various industries and build a variety of
           products across the tech stack. With a creative approach to my work, I
           focus on user experience and visual design to bring a thoughtful touch
-          to the products I build. Outside of work, I enjoy photography, movies,
-          cycling, and a slew of other interests and hobbies.
+          to the products I deliver. Outside of work, I enjoy photography,
+          watching movies, cycling, and a slew of other interests and hobbies.
         </p>
         <p className='fade-in-bottom delay-500'>
           Currently open to freelance and full-time opportunities. Let's{' '}
