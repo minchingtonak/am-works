@@ -3,17 +3,18 @@
 @tailwind utilities;
 
 ::selection {
-  background-color: #060402;
-  color: #fefefe;
+  background-color: #e77728;
+  color: #fbf8f1;
 }
 
 .dark ::selection {
-  background-color: #fefefe;
+  background-color: #fbf8f1;
   color: #060402;
 }
 
 /* Light theme colors */
 :root {
+  background-color: #fffcf5;
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
   --sh-sign: #8996a3;
@@ -136,7 +137,6 @@ input[type='email'] {
 }
 
 .prose .tweet a {
-  text-decoration: inherit;
   font-weight: 500;
 }
 
@@ -157,8 +157,8 @@ table {
 
 @media (prefers-color-scheme: dark) {
   ::selection {
-    background-color: #060402;
-    color: #fefefe;
+    background-color: #e77728;
+    color: #fbf8f1;
   }
 }
 
@@ -261,5 +261,34 @@ mark {
 .prose a {
   font-weight: inherit;
   color: inherit;
-  text-decoration-color: inherit;
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+  @apply text-sm mb-4;
+}
+
+.breadcrumb ol {
+  @apply flex items-center;
+}
+
+.breadcrumb li {
+  @apply flex items-center;
+}
+
+.breadcrumb a {
+  @apply text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white;
+}
+
+.breadcrumb .separator {
+  @apply text-gray-400;
+}
+
+.breadcrumb .current {
+  @apply text-gray-900 dark:text-white;
+}
+
+/* Footer styles */
+footer {
+  @apply mt-auto;
 }

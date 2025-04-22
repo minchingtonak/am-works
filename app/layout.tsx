@@ -3,6 +3,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { GeistMono } from 'geist/font/mono';
 import { GeistSans } from 'geist/font/sans';
 import type { Metadata } from 'next';
+import Breadcrumbs from './components/Breadcrumbs';
 import Footer from './components/footer';
 import { Navbar } from './components/nav';
 import { ThemeProvider } from './components/theme-switch';
@@ -83,6 +84,7 @@ export default function RootLayout({
         >
           <main className='flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[640px] w-full h-screen'>
             <Navbar />
+            <Breadcrumbs />
             {children}
             <Footer />
             <Analytics />
