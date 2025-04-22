@@ -1,4 +1,5 @@
 import { getAllPosts } from 'lib/mdx';
+import { Suspense } from 'react';
 import BlogList from './BlogList';
 
 export const metadata = {
@@ -11,7 +12,9 @@ export default async function BlogPage() {
 
   return (
     <section>
-      <BlogList posts={posts} />
+      <Suspense>
+        <BlogList posts={posts} />
+      </Suspense>
     </section>
   );
 }
