@@ -6,6 +6,8 @@ import { ThemeSwitch } from './theme-switch';
 const navItems = {
   '/': { name: 'home' },
   '/experience': { name: 'experience' },
+  '/achievements': { name: 'achievements' },
+  '/projects': { name: 'projects' },
   // TODO uses page
   // '/uses': { name: 'uses' },
 };

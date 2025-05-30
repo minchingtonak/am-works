@@ -119,28 +119,3 @@ export const Jobs: Role[] = [
   },
 ];
 
-export const Projects: Role[] = [
-  {
-    title: 'Lunchbox Studio',
-    description:
-      "Where I'll optimistically say that I'm creating something in my free time.",
-    url: 'https://lunchbox.studio',
-    start: 2025,
-    locked: false,
-    current: false,
-    styles: 'hover:bg-[#007d46] hover:text-white font-semibold align-baseline',
-    role: 'Founder',
-  },
-  {
-    title: 'Surely + Work',
-    start: 2024,
-    end: 2025,
-    locked: false,
-    current: true,
-    description: 'Leading development for a freelance gig economy platform.',
-    url: 'https://surelywork.com/',
-    styles:
-      'hover:bg-[#A3FD3D] dark:hover:text-[#060402] font-semibold align-baseline',
-    role: 'Lead Software Engineer',
-  },
-];

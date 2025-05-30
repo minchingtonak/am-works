@@ -1,5 +1,5 @@
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
-import { Jobs, Projects, Role } from './experience-data';
+import { Jobs, Role } from './experience-data';
 
 const formatDateRange = (job: Role) => {
   const startDate = job.startMonth ? `${job.startMonth} ${job.start}` : job.start;
@@ -101,53 +101,6 @@ export default function Experience() {
                     {job.title}
                     <FaArrowUpRightFromSquare className='inline-block align-baseline ml-1 w-2.5 h-2.5' />
                   </a>{' '}
-                  <span className='text-black dark:text-white font-medium tracking-tight group transition-opacity duration-200'>
-                    {' '}
-                    • {formatDateRange(job)}
-                  </span>
-                </small>
-              </div>
-              {job.description && (
-                <p className='prose prose-neutral dark:prose-invert pt-3'>
-                  {job.description}
-                </p>
-              )}
-              {job.bullets && job.bullets.length > 0 && (
-                <ul className='prose prose-neutral dark:prose-invert pt-3 list-disc list-outside space-y-2 pl-5'>
-                  {job.bullets.map((bullet, bulletIndex) => (
-                    <li key={bulletIndex} className='text-md leading-relaxed'>
-                      {bullet}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          ))}
-        </div>
-        <hr className='flex m-auto my-4 opacity-75 dark:opacity-25 w-full' />
-        <h1 className='mb-4 text-2xl font-medium tracking-tight'>Projects</h1>
-        <div className='space-y-6'>
-          {Projects.map((job, index) => (
-            <div key={index} className='pb-4'>
-              <div className='w-full items-baseline'>
-                <h3 className='text-black dark:text-white tracking-tight block group transition-opacity duration-200 text-xl'>
-                  {' '}
-                  {job.role}
-                </h3>
-                <small>
-                  <a
-                    key={index}
-                    href={job.url}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className={
-                      job.locked === true
-                        ? `cursor-not-allowed ${job.styles}`
-                        : `cursor-pointer ${job.styles}`
-                    }
-                  >
-                    {job.title}
-                  </a>
                   <span className='text-black dark:text-white font-medium tracking-tight group transition-opacity duration-200'>
                     {' '}
                     • {formatDateRange(job)}
