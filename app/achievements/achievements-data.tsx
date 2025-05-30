@@ -28,6 +28,6 @@ export const Achievements: Achievement[] = [
     url: 'https://blog.replit.com/pljamresults',
     locked: false,
     current: false,
-    styles: 'hover:bg-[#FF6B35] hover:text-white font-semibold align-baseline',
+    styles: 'hover:bg-[#FF6B35] hover:text-black font-semibold align-baseline',
   },
 ];

@@ -29,7 +29,7 @@ export const Jobs: Role[] = [
     url: 'https://aws.amazon.com/appstudio/',
     locked: false,
     current: true,
-    styles: 'hover:bg-[#007481] hover:text-white font-semibold align-baseline',
+    styles: 'hover:bg-[#FF9900] hover:text-black font-semibold align-baseline',
     role: 'Software Development Engineer I',
   },
   {
@@ -43,7 +43,7 @@ export const Jobs: Role[] = [
     url: 'https://needlestack.tech',
     locked: false,
     current: false,
-    styles: 'hover:bg-[#2356f6] hover:text-white font-semibold align-baseline',
+    styles: 'hover:bg-[#4D8B31] hover:text-white font-semibold align-baseline',
     role: 'Front End Development Engineer',
   },
   {
@@ -57,7 +57,7 @@ export const Jobs: Role[] = [
     url: 'https://amazon.com',
     locked: false,
     current: false,
-    styles: 'hover:bg-[#2356f6] hover:text-white font-semibold align-baseline',
+    styles: 'hover:bg-[#FF9900] hover:text-black font-semibold align-baseline',
     role: 'Software Development Engineer Intern',
   },
   {
@@ -70,7 +70,7 @@ export const Jobs: Role[] = [
     url: 'https://eecs485.org/',
     locked: false,
     current: false,
-    styles: 'hover:bg-[#2356f6] hover:text-white font-semibold align-baseline',
+    styles: 'hover:bg-[#FFCB05] hover:text-black font-semibold align-baseline',
     role: 'Instructional Aide – Web Systems',
   },
   {
@@ -83,7 +83,7 @@ export const Jobs: Role[] = [
     url: 'https://amirkamil.github.io/eecs398/syllabus.html',
     locked: false,
     current: false,
-    styles: 'hover:bg-[#2356f6] hover:text-white font-semibold align-baseline',
+    styles: 'hover:bg-[#FFCB05] hover:text-black font-semibold align-baseline',
     role: 'Instructional Aide – Programming Paradigms',
   },
   {
@@ -97,7 +97,7 @@ export const Jobs: Role[] = [
     url: 'https://amazon.com',
     locked: false,
     current: false,
-    styles: 'hover:bg-[#2356f6] hover:text-white font-semibold align-baseline',
+    styles: 'hover:bg-[#FF9900] hover:text-black font-semibold align-baseline',
     role: 'Software Development Engineer Intern',
   },
   {
@@ -114,7 +114,7 @@ export const Jobs: Role[] = [
     url: 'https://eecs280.org/',
     locked: false,
     current: false,
-    styles: 'hover:bg-[#2356f6] hover:text-white font-semibold align-baseline',
+    styles: 'hover:bg-[#FFCB05] hover:text-black font-semibold align-baseline',
     role: 'Instructional Aide & Cheat Checking Lead – Programming and Introductory Data Structures',
   },
 ];
