@@ -6,26 +6,26 @@ import { ThemeSwitch } from './theme-switch';
 const navItems = {
   '/': { name: 'home' },
   '/experience': { name: 'experience' },
-  '/uses': { name: 'uses' },
-  '/blog': { name: 'blog' },
+  // TODO uses page
+  // '/uses': { name: 'uses' },
 };
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className='lg:mb-16 mb-12 py-5'>
-      <div className='flex flex-col md:flex-row md:items-center justify-between'>
-        <div className='flex items-center justify-between'>
-          <Link href='/' className='text-3xl font-semibold tracking-tight'>
-            👨🏾‍💻
+    <nav className="lg:mb-16 mb-12 py-5">
+      <div className="flex flex-col md:flex-row md:items-center justify-between">
+        <div className="flex items-center justify-between">
+          <Link href="/" className="text-3xl font-semibold tracking-tight">
+            🧔🏻‍♂️💻🌱
           </Link>
           <button
-            className='md:hidden p-2'
+            className="md:hidden p-2"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label='Toggle menu'
+            aria-label="Toggle menu"
           >
-            <div className='w-6 h-6 flex flex-col justify-around'>
+            <div className="w-6 h-6 flex flex-col justify-around">
               <span
                 className={`block w-6 h-0.5 bg-current transform transition duration-300 ease-in-out ${
                   isOpen ? 'rotate-45 translate-y-2.5' : ''
@@ -53,20 +53,12 @@ export function Navbar() {
             <Link
               key={path}
               href={path}
-              className='transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative'
+              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative"
               onClick={() => setIsOpen(false)}
             >
               {name}
             </Link>
           ))}
-          <Link
-            href='https://www.byandrew.xyz'
-            target='_blank'
-            className='transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative'
-            onClick={() => setIsOpen(false)}
-          >
-            photos
-          </Link>
           <ThemeSwitch />
         </div>
       </div>

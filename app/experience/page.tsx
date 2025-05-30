@@ -1,25 +1,37 @@
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
-import { Jobs, Projects } from './experience-data';
-export default function Experience() {
-  const workExperience = [...Projects, ...Jobs].sort(
-    (b, a) => a.start - b.start
-  );
+import { Jobs, Projects, Role } from './experience-data';
 
+const formatDateRange = (job: Role) => {
+  const startDate = job.startMonth ? `${job.startMonth} ${job.start}` : job.start;
+
+  if (job.end) {
+    const endDate = job.endMonth ? `${job.endMonth} ${job.end}` : job.end;
+    return `${startDate} – ${endDate}`;
+  } else if (job.start > new Date().getFullYear()) {
+    return startDate;
+  } else {
+    return `${startDate} – Present`;
+  }
+};
+
+// TODO auto order by year/month
+// can represent start and end as dayjs obj, stringify to render or compare to sort
+export default function Experience() {
   return (
     <section>
       <div className='text-xl font-bold fade-in-bottom'>
         Currently at{' '}
         <mark
           style={{
-            color: '#4D8B31',
+            color: '#FF9900',
           }}
         >
           <a
-            href='https://boozallen.com/'
+            href='https://aws.amazon.com/'
             target='_blank'
             className='hover:bg-[#007481] hover:text-white decoration-dotted'
           >
-            Booz Allen Hamilton
+            Amazon Web Services
           </a>
         </mark>
         , previously at{' '}
@@ -29,14 +41,14 @@ export default function Experience() {
           }}
         >
           <a
-            href='https://twitter.com/firstfloorapp'
+            href='https://needlestack.tech/'
             target='_blank'
             className=' hover:bg-[#2356f6] hover:text-white'
           >
-            FirstFloor Studios
+            Needlestack
           </a>
         </mark>
-        , and before then at{' '}
+        {/* , and before then at{' '}
         <mark
           style={{
             color: '#4D8B31',
@@ -49,8 +61,20 @@ export default function Experience() {
           >
             Capital One
           </a>
-        </mark>
+        </mark> */}
         .
+        <div className='mt-6 mb-4'>
+          <p className='text-sm text-gray-600 dark:text-gray-400 mb-2'>
+            Want a PDF copy to keep handy?{' '}
+            <a
+              href='/Alec-Minchington-Resume.pdf'
+              download='Alec-Minchington-Resume.pdf'
+              className='text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline decoration-dotted hover:decoration-solid transition-colors'
+            >
+              Grab it here 📄
+            </a>
+          </p>
+        </div>
         <hr className='flex m-auto my-4 opacity-75 dark:opacity-25 w-full' />
       </div>
       <div className='fade-in-bottom delay-500'>
@@ -79,18 +103,24 @@ export default function Experience() {
                   </a>{' '}
                   <span className='text-black dark:text-white font-medium tracking-tight group transition-opacity duration-200'>
                     {' '}
-                    • {job.start}{' '}
-                    {job.start && job?.end
-                      ? ` – ${job.end}`
-                      : job?.start > new Date().getFullYear()
-                      ? null
-                      : ' – Present'}
+                    • {formatDateRange(job)}
                   </span>
                 </small>
               </div>
-              <p className='prose prose-neutral dark:prose-invert pt-3'>
-                {job.description}
-              </p>
+              {job.description && (
+                <p className='prose prose-neutral dark:prose-invert pt-3'>
+                  {job.description}
+                </p>
+              )}
+              {job.bullets && job.bullets.length > 0 && (
+                <ul className='prose prose-neutral dark:prose-invert pt-3 list-disc list-outside space-y-2 pl-5'>
+                  {job.bullets.map((bullet, bulletIndex) => (
+                    <li key={bulletIndex} className='text-md leading-relaxed'>
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>
@@ -120,18 +150,24 @@ export default function Experience() {
                   </a>
                   <span className='text-black dark:text-white font-medium tracking-tight group transition-opacity duration-200'>
                     {' '}
-                    • {job.start}{' '}
-                    {job.start && job?.end
-                      ? ` – ${job.end}`
-                      : job?.start > new Date().getFullYear()
-                      ? null
-                      : ' – Present'}
+                    • {formatDateRange(job)}
                   </span>
                 </small>
               </div>
-              <p className='prose prose-neutral dark:prose-invert pt-3'>
-                {job.description}
-              </p>
+              {job.description && (
+                <p className='prose prose-neutral dark:prose-invert pt-3'>
+                  {job.description}
+                </p>
+              )}
+              {job.bullets && job.bullets.length > 0 && (
+                <ul className='prose prose-neutral dark:prose-invert pt-3 list-disc list-outside space-y-2 pl-5'>
+                  {job.bullets.map((bullet, bulletIndex) => (
+                    <li key={bulletIndex} className='text-md leading-relaxed'>
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>

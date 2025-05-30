@@ -2,25 +2,25 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'About | Andrew Whitely',
+  description: 'About | Alec Minchington',
 };
 
+// FIXME this is unused
 export default function About() {
   return (
     <div>
-      <section className='space-y-6'>
-        <div className='text-xl font-normal'>
-          I'm a software engineer who likes making things that can improve
-          people's interactions with the technology that they use daily. I'm
-          passionate about technology, photography, movies, and a slew of other
-          interests and hobbies.
+      <section className="space-y-6">
+        <div className="text-xl font-normal">
+          I'm a software engineer passionate about creating technology that
+          enhances how people interact with the tools they use every day. Beyond
+          coding, I'm deeply interested in music, cinema, and video games.
         </div>
-        <div className='text-xl font-normal'>
+        <div className="text-xl font-normal">
           Currently at
-          <a href='https://boozallen.com/' target='_blank'>
-            Booz Allen Hamilton
+          <a href="https://aws.amazon.com/" target="_blank">
+            Amazon Web Services
           </a>
-          , previously at FirstFloor Studios and Capital One.
+          , previously at Needlestack
         </div>
       </section>
     </div>

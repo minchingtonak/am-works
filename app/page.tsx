@@ -1,30 +1,29 @@
 export default function Page() {
   return (
     <section>
-      <div className='prose prose-neutral dark:prose-invert'>
-        <p className='text-2xl font-bold tracking-tight fade-in-bottom'>
+      <div className="prose prose-neutral dark:prose-invert">
+        <p className="text-2xl font-bold tracking-tight fade-in-bottom">
           Hey, I'm{' '}
           <mark
             style={{
-              color: '#4D8B31',
+              color: '#61d22e',
             }}
           >
-            Andrew
+            Alec
           </mark>{' '}
-          &mdash; a product-focused software engineer and chronic hobbyist based
-          in Charlotte, North Carolina.
+          &mdash; a product-focused software engineer and serial hobbyist based
+          in Seattle, WA.
         </p>
-        <p className='fade-in-bottom delay-500'>
-          I'm a software engineer who loves diving into the deep end. I have a
-          focus on front-end development, but love exploring all areas of the
-          tech stack. I'm passionate about building solutions that not only
-          improve how people interact with the things that they use daily, but
-          providing a clean and enjoyable user experience and visual design to
-          the products I deliver.
+        <p className="fade-in-bottom delay-500">
+          As a software engineer, I thrive on tackling complex challenges. While
+          my expertise centers on front-end development, I enjoy exploring every
+          layer of the technology stack. I'm driven by creating solutions that
+          enhance daily user interactions while delivering polished, intuitive
+          experiences and thoughtful visual design.
         </p>
-        <p className='fade-in-bottom delay-500'>
-          Currently open to freelance and full-time opportunities. Let's{' '}
-          <a href='mailto:andrewnwhitely@gmail.com?Subject=Hey!'>talk</a>!
+        <p className="fade-in-bottom delay-500">
+          I'm actively seeking freelance projects and full-time roles. Let's{' '}
+          <a href="mailto:contact@minch.cc?Subject=Hey!">talk</a>!
         </p>
       </div>
     </section>
