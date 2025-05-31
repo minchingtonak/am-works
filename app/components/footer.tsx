@@ -17,10 +17,10 @@ function SocialLink({ href, icon: Icon }) {
 function SocialLinks() {
   return (
     <div className="flex items-center text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90">
-      <p className="text-sm">contact@minch.cc</p>
       <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
       <SocialLink href={socialLinks.github} icon={FaGithub} />
       <SocialLink href={socialLinks.email} icon={TbMailFilled} />
+      <p className="text-sm">contact@minch.cc</p>
     </div>
   );
 }

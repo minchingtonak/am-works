@@ -2,7 +2,7 @@ export const metaData = {
   baseUrl: 'https://www.alecminchington.me/',
   title: 'Alec Minchington - Software Engineer',
   name: 'Alec Minchington',
-  ogImage: '/og.png',
+  ogImage: '/og.png', // https://og-playground.vercel.app/
   description:
     'I create interactive products and work with innovate technology. Fullstack software engineer with experience building from 0 to 1.',
 };
