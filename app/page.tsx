@@ -27,7 +27,7 @@ export default function Page() {
         </p>
       </div>
       <div className="mt-6 mb-4">
-        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2 fade-in-bottom delay-700">
           Want a PDF copy of my resumé to keep handy?{' '}
           <a
             href="/Alec-Minchington-Resume.pdf"
