@@ -26,6 +26,18 @@ export default function Page() {
           <a href="mailto:contact@minch.cc?Subject=Hey!">talk</a>!
         </p>
       </div>
+      <div className="mt-6 mb-4">
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+          Want a PDF copy of my resumé to keep handy?{' '}
+          <a
+            href="/Alec-Minchington-Resume.pdf"
+            download="Alec-Minchington-Resume.pdf"
+            className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline decoration-dotted hover:decoration-solid transition-colors"
+          >
+            Grab it here 📄
+          </a>
+        </p>
+      </div>
     </section>
   );
 }
