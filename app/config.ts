@@ -4,7 +4,7 @@ export const metaData = {
   name: 'Alec Minchington',
   ogImage: '/og.png', // https://og-playground.vercel.app/
   description:
-    'I create interactive products and work with innovate technology. Fullstack software engineer with experience building from 0 to 1.',
+    'I create interactive products and work with innovative technology. Full-stack software engineer with experience building from 0 to 1.',
 };
 
 export const socialLinks = {
