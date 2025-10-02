@@ -21,13 +21,9 @@ export default function Page() {
           enhance daily user interactions while delivering polished, intuitive
           experiences and thoughtful visual design.
         </p>
-        <p className="fade-in-bottom delay-500">
-          I'm actively seeking freelance projects and full-time roles. Let's{' '}
-          <a href="mailto:contact@minch.cc?Subject=Hey!">talk</a>!
-        </p>
       </div>
-      <div className="mt-6 mb-4">
-        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2 fade-in-bottom delay-700">
+      <div className="mt-12">
+        <p className="text-sm text-gray-600 dark:text-gray-400 fade-in-bottom delay-700">
           Want a PDF copy of my resumé to keep handy?{' '}
           <a
             href="/Alec-Minchington-Resume.pdf"
