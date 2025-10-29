@@ -1,5 +1,5 @@
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
-import { Jobs, Role } from './experience-data';
+import { ROLES, Role } from './experience-data';
 
 const formatDateRange = (job: Role) => {
   const startDate = job.startMonth
@@ -25,18 +25,32 @@ export default function Experience() {
         Currently at{' '}
         <mark
           style={{
+            color: '#DE3341',
+          }}
+        >
+          <a
+            href="https://www.rocketloans.com/"
+            target="_blank"
+            className="hover:bg-[#007481] hover:text-white decoration-dotted underline"
+          >
+            Rocket Loans
+          </a>
+        </mark>
+        , previously at{' '}
+        <mark
+          style={{
             color: '#FF9900',
           }}
         >
           <a
             href="https://aws.amazon.com/"
             target="_blank"
-            className="hover:bg-[#007481] hover:text-white decoration-dotted"
+            className="hover:bg-[#007481] hover:text-white decoration-dotted underline"
           >
             Amazon Web Services
           </a>
         </mark>
-        , previously at{' '}
+        , and before then at{' '}
         <mark
           style={{
             color: '#4D8B31',
@@ -45,25 +59,11 @@ export default function Experience() {
           <a
             href="https://needlestack.tech/"
             target="_blank"
-            className=" hover:bg-[#2356f6] hover:text-white"
+            className=" hover:bg-[#007481] hover:text-white underline"
           >
             Needlestack
           </a>
         </mark>
-        {/* , and before then at{' '}
-        <mark
-          style={{
-            color: '#4D8B31',
-          }}
-        >
-          <a
-            href='https://capitalone.com/'
-            target='_blank'
-            className=' hover:bg-[#355f7f] hover:text-white'
-          >
-            Capital One
-          </a>
-        </mark> */}
         .
         <div className="mt-6 mb-4">
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
@@ -82,7 +82,7 @@ export default function Experience() {
       <div className="fade-in-bottom delay-500">
         <h1 className="mb-4 text-2xl font-medium tracking-tight">Experience</h1>
         <div className="space-y-6">
-          {Jobs.map((job, index) => (
+          {ROLES.map((job, index) => (
             <div key={index} className="pb-4">
               <div className="w-full items-baseline">
                 <h3 className="text-black dark:text-white  tracking-tight block group transition-opacity duration-200 text-xl">
@@ -94,11 +94,7 @@ export default function Experience() {
                     href={job.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={
-                      job.locked === true
-                        ? `cursor-not-allowed ${job.styles}`
-                        : `cursor-pointer ${job.styles}`
-                    }
+                    className={`hover:text-black font-semibold align-baseline px-1 ${job.styles}`}
                   >
                     {job.title}
                     <FaArrowUpRightFromSquare className="inline-block align-baseline ml-1 w-2.5 h-2.5" />

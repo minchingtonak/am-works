@@ -6,18 +6,18 @@ export interface Role {
   endMonth?: string;
   description?: string;
   url: string;
-  locked?: boolean;
-  current?: boolean;
   styles?: string;
   role?: string;
   bullets?: string[];
 }
 
-export const Jobs: Role[] = [
+export const ROLES: Role[] = [
   {
-    title: 'Amazon Web Services – AWS App Studio & TBA Generative AI product',
+    title: 'Amazon Web Services – AWS App Studio & Amazon Quick Research',
     start: 2022,
+    end: 2025,
     startMonth: 'September',
+    endMonth: 'September',
     bullets: [
       'Developed a new, simplified onboarding feature for AWS App Studio, a generative AI-powered, low-code web application builder for business users, which increased the onboarding completion rate by 30% and decreased the abandon rate by 6%',
       'Designed and implemented a framework to allow App Studio engineers to securely and quickly scrub Personally Identifiable Information from service logs stored in CloudWatch, which was used to clean log data across two production instances and successfully redacted 90GB of log data',
@@ -26,10 +26,8 @@ export const Jobs: Role[] = [
       'Designed and implemented an all-new foundational testing framework for easy snapshot testing of auto-generated code that has been adopted ubiquitously across the App Studio organization to rapidly write tests',
       'Implemented core functionality of the highly customer-requested Undo/Redo feature for App Studio, saving customers hours of manually undoing and redoing changes',
     ],
-    url: 'https://aws.amazon.com/appstudio/',
-    locked: false,
-    current: true,
-    styles: 'hover:bg-[#FF9900] hover:text-black font-semibold align-baseline',
+    url: 'https://aws.amazon.com/quicksuite/research/',
+    styles: 'hover:bg-[#FF9900]',
     role: 'Software Development Engineer I',
   },
   {
@@ -41,9 +39,7 @@ export const Jobs: Role[] = [
     description:
       'Designed and implemented UX for core features of the Athena Learning Management System, an innovative competitor to Canvas, including assignment & exam administration, and AI-powered student insights',
     url: 'https://needlestack.tech',
-    locked: false,
-    current: false,
-    styles: 'hover:bg-[#4D8B31] hover:text-white font-semibold align-baseline',
+    styles: 'hover:bg-[#4D8B31] hover:text-white',
     role: 'Front End Development Engineer',
   },
   {
@@ -55,9 +51,7 @@ export const Jobs: Role[] = [
     description:
       'Developed web application to simplify the complex process of onboarding internal customers’ new A/B feature experiments on amazon.com',
     url: 'https://amazon.com',
-    locked: false,
-    current: false,
-    styles: 'hover:bg-[#FF9900] hover:text-black font-semibold align-baseline',
+    styles: 'hover:bg-[#FF9900]',
     role: 'Software Development Engineer Intern',
   },
   {
@@ -66,11 +60,10 @@ export const Jobs: Role[] = [
     end: 2021,
     startMonth: 'January',
     endMonth: 'May',
-    description: 'Instructed students in web programming concepts and helped solve code issues during office hours',
+    description:
+      'Instructed students in web programming concepts and helped solve code issues during office hours',
     url: 'https://eecs485.org/',
-    locked: false,
-    current: false,
-    styles: 'hover:bg-[#FFCB05] hover:text-black font-semibold align-baseline',
+    styles: 'hover:bg-[#FFCB05]',
     role: 'Instructional Aide – Web Systems',
   },
   {
@@ -79,11 +72,10 @@ export const Jobs: Role[] = [
     end: 2021,
     startMonth: 'September',
     endMonth: 'January',
-    description: 'Guided students through implementation of a programming language interpreter via lab sessions & office hours',
+    description:
+      'Guided students through implementation of a programming language interpreter via lab sessions & office hours',
     url: 'https://amirkamil.github.io/eecs398/syllabus.html',
-    locked: false,
-    current: false,
-    styles: 'hover:bg-[#FFCB05] hover:text-black font-semibold align-baseline',
+    styles: 'hover:bg-[#FFCB05]',
     role: 'Instructional Aide – Programming Paradigms',
   },
   {
@@ -95,9 +87,7 @@ export const Jobs: Role[] = [
     description:
       'Created a web application to query Amazon product listing data from Elasticsearch and allow internal customers to gain insights into the data via dynamic visualizations',
     url: 'https://amazon.com',
-    locked: false,
-    current: false,
-    styles: 'hover:bg-[#FF9900] hover:text-black font-semibold align-baseline',
+    styles: 'hover:bg-[#FF9900]',
     role: 'Software Development Engineer Intern',
   },
   {
@@ -107,15 +97,12 @@ export const Jobs: Role[] = [
     startMonth: 'January',
     endMonth: 'May',
     bullets: [
-      'Bolstered students’ understanding of C++ programming concepts by hosting a weekly lab session',
+      "Bolstered students' understanding of C++ programming concepts by hosting a weekly lab session",
       'Helped students solve their software & programming problems in office hours',
-      'Analyzed student code submissions to find evidence of cheating'
+      'Analyzed student code submissions to find evidence of cheating',
     ],
     url: 'https://eecs280.org/',
-    locked: false,
-    current: false,
-    styles: 'hover:bg-[#FFCB05] hover:text-black font-semibold align-baseline',
+    styles: 'hover:bg-[#FFCB05]',
     role: 'Instructional Aide & Cheat Checking Lead – Programming and Introductory Data Structures',
   },
 ];
-

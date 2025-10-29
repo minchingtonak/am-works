@@ -12,7 +12,7 @@ export default function Page() {
             Alec
           </mark>{' '}
           &mdash; a product-focused software engineer and serial hobbyist based
-          in Seattle, WA.
+          in Detroit, MI.
         </p>
         <p className="fade-in-bottom delay-500">
           As a software engineer, I thrive on tackling complex challenges. While
