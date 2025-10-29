@@ -1,3 +1,5 @@
+import { ResumeDownloadLink } from './components/ResumeDownloadLink';
+
 export default function Page() {
   return (
     <section>
@@ -24,14 +26,7 @@ export default function Page() {
       </div>
       <div className="mt-12">
         <p className="text-sm text-gray-600 dark:text-gray-400 fade-in-bottom delay-700">
-          Want a PDF copy of my resumé to keep handy?{' '}
-          <a
-            href="/Alec-Minchington-Resume.pdf"
-            download="Alec-Minchington-Resume.pdf"
-            className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline decoration-dotted hover:decoration-solid transition-colors"
-          >
-            Grab it here 📄
-          </a>
+          Want a PDF copy of my resumé to keep handy? <ResumeDownloadLink />
         </p>
       </div>
     </section>

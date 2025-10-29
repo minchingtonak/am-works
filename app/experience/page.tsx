@@ -1,5 +1,6 @@
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import { ROLES, Role } from './experience-data';
+import { ResumeDownloadLink } from 'app/components/ResumeDownloadLink';
 
 const formatDateRange = (job: Role) => {
   const startDate = job.startMonth
@@ -67,14 +68,7 @@ export default function Experience() {
         .
         <div className="mt-6 mb-4">
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-            Want a PDF copy of my resumé to keep handy?{' '}
-            <a
-              href="/Alec-Minchington-Resume.pdf"
-              download="Alec-Minchington-Resume.pdf"
-              className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline decoration-dotted hover:decoration-solid transition-colors"
-            >
-              Grab it here 📄
-            </a>
+            Want a PDF copy of my resumé to keep handy? <ResumeDownloadLink />
           </p>
         </div>
         <hr className="flex m-auto my-4 opacity-75 dark:opacity-25 w-full" />
