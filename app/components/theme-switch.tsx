@@ -1,7 +1,7 @@
 'use client';
 import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes';
 import type { ThemeProviderProps } from 'next-themes/dist/types';
-import * as React from 'react';
+import { useEffect, useState } from 'react';
 
 import { FiMoon, FiSun } from 'react-icons/fi';
 const storageKey = 'theme-preference';
@@ -9,8 +9,8 @@ const storageKey = 'theme-preference';
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   return (
     <NextThemesProvider
-      attribute='class'
-      defaultTheme='system'
+      attribute="class"
+      defaultTheme="system"
       enableSystem
       {...props}
     >
@@ -21,10 +21,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
 
 export const ThemeSwitch: React.FC = () => {
   const { setTheme } = useTheme();
-  const [mounted, setMounted] = React.useState(false);
-  const [currentTheme, setCurrentTheme] = React.useState<'light' | 'dark'>(
-    'light'
-  );
+  const [currentTheme, setCurrentTheme] = useState<'light' | 'dark'>('light');
 
   const getColorPreference = (): 'light' | 'dark' => {
     if (typeof window !== 'undefined') {
@@ -46,8 +43,7 @@ export const ThemeSwitch: React.FC = () => {
     setTheme(theme);
   };
 
-  React.useEffect(() => {
-    setMounted(true);
+  useEffect(() => {
     const initTheme = getColorPreference();
     reflectPreference(initTheme);
 
@@ -71,18 +67,18 @@ export const ThemeSwitch: React.FC = () => {
 
   return (
     <button
-      id='theme-toggle'
+      id="theme-toggle"
       aria-label={`${currentTheme} mode`}
       onClick={toggleTheme}
-      className='flex items-center align-middle justify-center transition-opacity duration-300 hover:opacity-90'
+      className="flex items-center align-middle justify-center transition-opacity duration-300 hover:opacity-90"
     >
       {currentTheme === 'dark' ? (
         <p>
-          <FiSun className='text-[#D4D4D4] text-xs' />
+          <FiSun className="text-[#D4D4D4] text-xs" />
         </p>
       ) : (
         <p>
-          <FiMoon className='text-[#1c1c1c] text-xs' />
+          <FiMoon className="text-[#1c1c1c] text-xs" />
         </p>
       )}
     </button>
