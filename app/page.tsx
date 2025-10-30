@@ -13,7 +13,7 @@ export default function Page() {
           >
             Alec
           </mark>{' '}
-          &mdash; a product-focused software engineer and serial hobbyist based
+          &mdash; a product-focused software engineer and lifelong hobbyist based
           in Detroit, MI.
         </p>
         <p className="fade-in-bottom delay-500">
