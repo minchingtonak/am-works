@@ -1,15 +1,6 @@
-export interface Role {
-  title: string;
-  start: number;
-  startMonth?: string;
-  end?: number | string;
-  endMonth?: string;
-  description?: string;
-  url: string;
-  styles?: string;
-  role?: string;
-  bullets?: string[];
-}
+import { ResumeItem } from 'lib/types';
+
+export interface Role extends ResumeItem {}
 
 export const ROLES: Role[] = [
   {

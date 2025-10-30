@@ -1,24 +1,7 @@
-import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
-import { ROLES, Role } from './experience-data';
+import { ResumeItem } from 'app/components/ResumeItem';
+import { ROLES } from './experience-data';
 import { ResumeDownloadLink } from 'app/components/ResumeDownloadLink';
 
-const formatDateRange = (job: Role) => {
-  const startDate = job.startMonth
-    ? `${job.startMonth} ${job.start}`
-    : job.start;
-
-  if (job.end) {
-    const endDate = job.endMonth ? `${job.endMonth} ${job.end}` : job.end;
-    return `${startDate} – ${endDate}`;
-  } else if (job.start > new Date().getFullYear()) {
-    return startDate;
-  } else {
-    return `${startDate} – Present`;
-  }
-};
-
-// TODO auto order by year/month
-// can represent start and end as dayjs obj, stringify to render or compare to sort
 export default function Experience() {
   return (
     <section>
@@ -75,45 +58,10 @@ export default function Experience() {
       </div>
       <div className="fade-in-bottom delay-500">
         <h1 className="mb-4 text-2xl font-medium tracking-tight">Experience</h1>
+        {/* // TODO auto order by year/month. can represent start and end as dayjs obj, stringify to render or compare to sort */}
         <div className="space-y-6">
-          {ROLES.map((job, index) => (
-            <div key={index} className="pb-4">
-              <div className="w-full items-baseline">
-                <h3 className="text-black dark:text-white  tracking-tight block group transition-opacity duration-200 text-xl">
-                  {job.role}
-                </h3>
-                <small>
-                  <a
-                    key={index}
-                    href={job.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`hover:text-black font-semibold align-baseline px-1 ${job.styles}`}
-                  >
-                    {job.title}
-                    <FaArrowUpRightFromSquare className="inline-block align-baseline ml-1 w-2.5 h-2.5" />
-                  </a>{' '}
-                  <span className="text-black dark:text-white font-medium tracking-tight group transition-opacity duration-200">
-                    {' '}
-                    • {formatDateRange(job)}
-                  </span>
-                </small>
-              </div>
-              {job.description && (
-                <p className="prose prose-neutral dark:prose-invert pt-3">
-                  {job.description}
-                </p>
-              )}
-              {job.bullets && job.bullets.length > 0 && (
-                <ul className="prose prose-neutral dark:prose-invert pt-3 list-disc list-outside space-y-2 pl-5">
-                  {job.bullets.map((bullet, bulletIndex) => (
-                    <li key={bulletIndex} className="text-md leading-relaxed">
-                      {bullet}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
+          {ROLES.map((job) => (
+            <ResumeItem key={job.title} item={job} />
           ))}
         </div>
       </div>

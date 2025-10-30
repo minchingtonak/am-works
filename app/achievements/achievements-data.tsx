@@ -1,21 +1,8 @@
-export interface Achievement {
-  title: string;
-  start: number;
-  startMonth?: string;
-  end?: number | string;
-  endMonth?: string;
-  description?: string;
-  url: string;
-  locked?: boolean;
-  current?: boolean;
-  styles?: string;
-  role?: string;
-  bullets?: string[];
-  organization?: string;
-}
+import { ResumeItem } from 'lib/types';
 
-// TODO multiple links for achievements
-export const Achievements: Achievement[] = [
+export interface Achievement extends ResumeItem {}
+
+export const ACHIEVEMENTS: Achievement[] = [
   {
     title: 'Replit Programming Language Jam',
     role: 'Replit Lang Jam Winner',
@@ -24,10 +11,9 @@ export const Achievements: Achievement[] = [
     end: 2020,
     startMonth: 'October',
     endMonth: 'October',
-    description: 'Together with a partner, won first place for our work on Basil, a new programming language exploring partial evaluation, context-sensitive parsing, and metaprogramming. It was developed from scratch over the course of a week.',
+    description:
+      'Together with a partner, won first place for our work on Basil, a new programming language exploring partial evaluation, context-sensitive parsing, and metaprogramming. It was developed from scratch over the course of a week.',
     url: 'https://blog.replit.com/pljamresults',
-    locked: false,
-    current: false,
-    styles: 'hover:bg-[#FF6B35] hover:text-black font-semibold align-baseline',
+    styles: 'hover:bg-[#FF6B35]',
   },
 ];
